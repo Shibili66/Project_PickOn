@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "986800098763",
+    "project_id": "pickonshopee",
+    "storage_bucket": "pickonshopee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986800098763:android:04879846e492cd740fba4e",
+        "android_client_info": {
+          "package_name": "com.example.pickonshopee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986800098763-4593q5stnbedc2cnq0akh0fdpbvme22o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pickonshopee",
+            "certificate_hash": "632523e97683bf07e5b82d33b02e01f78e24d66a"
+          }
+        },
+        {
+          "client_id": "986800098763-dev6u34cijarcgep68p0d3aaip46n07s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd-QnxltQrf8_yJlw_RuFuda4shvMfkOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986800098763-dev6u34cijarcgep68p0d3aaip46n07s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pick_on/screen/Slider_Menu/slider_menu.dart';
 
 class MyProfile extends StatefulWidget{
   @override

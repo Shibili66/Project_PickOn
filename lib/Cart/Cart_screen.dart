@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pick_on/screen/Payment.dart';
+import 'package:pick_on/screen/Payment/Payment.dart';
 import 'package:provider/provider.dart';
 import 'package:badges/badges.dart';
 
@@ -219,27 +219,29 @@ class _CartscreenState extends State<Cartscreen> {
            Consumer<CartProvider>(builder: (context, value, child){
              return Visibility(
                visible: value.getTotalPrice().toStringAsFixed(2) == "0.00" ? false : true,
-               child: Column(
-                 children: [
-                   ReusableWidget(title: 'Sub Total', value: r'Rs. '+value.getTotalPrice().toStringAsFixed(2)),
-                   ReusableWidget(title: 'Discout 5%', value: r'Rs. '+'',),
-                   Divider(),
-                   SizedBox(
-                     height: 30,
-                     child: ReusableWidget(title: 'Total', value: r'Rs. '+value.getTotalPrice().toStringAsFixed(2))),
-                   ElevatedButton(
-                       style: ButtonStyle(
-                           backgroundColor: MaterialStateProperty.all(Color(0xFF31906E).withOpacity(.9),),
-                           minimumSize: MaterialStateProperty.all(Size(230, 50)),
-                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                               RoundedRectangleBorder(
-                                 borderRadius: BorderRadius.circular(30.0),
-                               ))),
-                       onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context)=>Payment()));
-                       },
-                       child: Text("Confirm Order"))
-                 ],
+               child: Center(
+                 child: Column(
+                   children: [
+                     ReusableWidget(title: 'Sub Total', value: r'Rs. '+value.getTotalPrice().toStringAsFixed(2)),
+                     ReusableWidget(title: 'Discout 5%', value: r'Rs. '+'',),
+                     Divider(),
+                     SizedBox(
+                       height: 30,
+                       child: ReusableWidget(title: 'Total', value: r'Rs. '+value.getTotalPrice().toStringAsFixed(2))),
+                     ElevatedButton(
+                         style: ButtonStyle(
+                             backgroundColor: MaterialStateProperty.all(Color(0xFF31906E).withOpacity(.9),),
+                             minimumSize: MaterialStateProperty.all(Size(230, 50)),
+                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                 RoundedRectangleBorder(
+                                   borderRadius: BorderRadius.circular(30.0),
+                                 ))),
+                         onPressed: (){
+                           Navigator.push(context, MaterialPageRoute(builder: (context)=>Payment()));
+                         },
+                         child: Text("Confirm Order"))
+                   ],
+                 ),
                ),
              );
            })

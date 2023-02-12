@@ -88,7 +88,6 @@ class Myadd extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
-
         obscureText:  isPasswordTextField ? isObscurePassword :false,
         decoration: InputDecoration(
             border: OutlineInputBorder(
